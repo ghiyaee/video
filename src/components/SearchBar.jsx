@@ -4,6 +4,7 @@ class SearchBar extends React.Component{
     state = { term: '' }
     onSubmatHandel = (e) => {
         e.preventDefault()
+        this.props.onSubmit(this.state.term)
     }
     onChangeHandel = (e) => {
         this.setState({ term: e.target.value });
