@@ -7,8 +7,7 @@ class SearchBar extends React.Component{
         this.props.onSubmit(this.state.term)
     }
     onChangeHandel = (e) => {
-        this.setState({ term: e.target.value });
-        console.log(this.state.term);
+        this.setState({ term: e.target.value })
     }
     render() {
         return (
@@ -16,7 +15,10 @@ class SearchBar extends React.Component{
                 <form action="" className="frm" onSubmit={this.onSubmatHandel} >
                     <div className="field">
                         <label className="lbl">Video Search</label>
-                        <input type="text" className="input" onChange={this.onChangeHandel} value={this.state.term }/>
+                        <input type="text"
+                            className="input"
+                            onChange={this.onChangeHandel}
+                            value={this.state.term} />
                     </div>
                 </form>
               </div>
