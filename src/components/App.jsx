@@ -23,8 +23,11 @@ class App extends React.Component{
         return (
           <div className="container">
             <SearchBar onSubmit={this.onSubmitValue} />
+            <div className="display">
             <VideoDetail video ={this. state.selectedVideo} />
             <VideoList onVideoSelect={this.onVideoSelect} videos={this.state.videos} />
+
+            </div>
              
           </div>
         );
