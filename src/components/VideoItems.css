@@ -1,0 +1,9 @@
+.list{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+}
+ .list img{
+     width: 150px;
+ }
