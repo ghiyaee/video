@@ -1,8 +1,7 @@
 import React from "react";
 import './SearchBar.css'
-import './imag/yout.png'
 class SearchBar extends React.Component{
-    state = { term: ''  }
+    state = { term: 'adel'  }
     
     onSubmatHandel = (e) => {
         e.preventDefault()
@@ -15,7 +14,7 @@ class SearchBar extends React.Component{
         return (
           <div className="search-bar">
             <form action="" className="frm" onSubmit={this.onSubmatHandel}>
-              <img src={require('./imag/yout.png')} alt={"photo"} className='logo' />
+              <i class="youtube icon massive red"></i>
               <div className="field">
                 <label className="lbl">Video Search With Api YouTube</label>
                 <input
