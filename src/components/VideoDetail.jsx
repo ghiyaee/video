@@ -3,13 +3,9 @@ import './VideoDetail.css'
 
 const VideoDetail = ({ video }) => {
     const [up, setUp] = useState(0)
-     const [down, setDown] = useState(0);
-    const upHandel  =() =>{
-       setUp(up + 1 )
-    }
-    const downHandel = () => {
-        setDown(down + 1)
-    }
+     const [down, setDown] = useState(0)
+    const upHandel  =() =>{ setUp(up + 1 ) }
+    const downHandel = () => { setDown(down + 1) }
     if (!video) {
         return <div><i class="spinner loading icon"></i></div>
     }

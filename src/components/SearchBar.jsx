@@ -20,6 +20,7 @@ class SearchBar extends React.Component{
                 <label className="lbl">Video Search With Api YouTube</label>
                 <input
                   type="text"
+                  placeholder="Search"
                   className="input"
                   onChange={this.onChangeHandel}
                   value={this.state.term}
