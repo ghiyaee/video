@@ -11,7 +11,7 @@ const VideoDetail = ({ video }) => {
         setDown(down + 1)
     }
     if (!video) {
-        return <div>Loading...</div>
+        return <div><i class="spinner loading icon"></i></div>
     }
     const videoSrc=`https://www.youtube.com/embed/${video.id.videoId}`
     return (
@@ -23,7 +23,7 @@ const VideoDetail = ({ video }) => {
         <p>{video.snippet.description}</p>
         <div className="icon">
                 <i className="thumbs up outline icon big " onClick={upHandel}>{up}</i>
-                <i class="thumbs down outline icon big " onClick={downHandel}>{down}</i>
+                <i className="thumbs down outline icon big " onClick={downHandel}>{down}</i>
         </div>
       </div>
     );
