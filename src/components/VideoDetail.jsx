@@ -22,8 +22,8 @@ const VideoDetail = ({ video }) => {
         <h4 className="titel">{video.snippet.title}</h4>
         <p>{video.snippet.description}</p>
         <div className="icon">
-                <i className="thumbs up outline icon big " onClick={upHandel}>{up}</i>
-                <i className="thumbs down outline icon big " onClick={downHandel}>{down}</i>
+                <i className="thumbs up outline icon large " onClick={upHandel}>&nbsp;&nbsp;{up}</i>
+                <i className="thumbs down outline icon large " onClick={downHandel}>&nbsp;&nbsp;{down}</i>
         </div>
       </div>
     );
