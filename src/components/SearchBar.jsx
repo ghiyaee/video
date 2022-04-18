@@ -1,7 +1,9 @@
 import React from "react";
 import './SearchBar.css'
+import './imag/yout.png'
 class SearchBar extends React.Component{
-    state = { term: '' }
+    state = { term: ''  }
+    
     onSubmatHandel = (e) => {
         e.preventDefault()
         this.props.onSubmit(this.state.term)
@@ -11,18 +13,21 @@ class SearchBar extends React.Component{
     }
     render() {
         return (
-            <div className="search-bar">
-                <form action="" className="frm" onSubmit={this.onSubmatHandel} >
-                    <div className="field">
-                        <label className="lbl">Video Search</label>
-                        <input type="text"
-                            className="input"
-                            onChange={this.onChangeHandel}
-                            value={this.state.term} />
-                    </div>
-                </form>
+          <div className="search-bar">
+            <form action="" className="frm" onSubmit={this.onSubmatHandel}>
+              <img src={require('./imag/yout.png')} alt={"photo"} className='logo' />
+              <div className="field">
+                <label className="lbl">Video Search With Api YouTube</label>
+                <input
+                  type="text"
+                  className="input"
+                  onChange={this.onChangeHandel}
+                  value={this.state.term}
+                />
               </div>
-        )
+            </form>
+          </div>
+        );
     }
 }
 export default SearchBar;

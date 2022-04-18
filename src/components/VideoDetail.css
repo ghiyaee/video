@@ -1,8 +1,17 @@
 .detail{
     margin-top: 10px;
-    border: 2px solid #eee;
+    border: 2px solid rgb(216, 214, 214);
     padding: 10px;
 }
 .titel{
     margin-bottom: 8px;
+}
+.ifrm{
+    width:650px;
+    height:400px;
+}
+.icon i{
+    margin: 0px 25px;
+    cursor: pointer;
+    font-weight: bold;
 }

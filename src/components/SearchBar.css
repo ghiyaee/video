@@ -8,6 +8,13 @@
     border: 2px solid #eee;
     border-radius: 7px;
 }
+.frm{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+}
 .field{
     display: flex;
     flex-direction: column;
@@ -20,6 +27,11 @@
     padding: 15px;
     border: 2px solid #eee;
     border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+
 }
 .lbl{
     font-weight: bold;
