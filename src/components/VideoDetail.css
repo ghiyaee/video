@@ -15,21 +15,28 @@
     cursor: pointer;
     font-weight: bold;
 }
-@media (max-width:768px) {
+@media (max-width:1100px) {
+    .ifrm{
+        width: 900px;
+        transition: all 1s ease-in-out;
+    }
+    
+}
+@media (max-width:900px) {
+    .ifrm{
+        width: 750px;
+    }
+    
+}
+@media (max-width:750px) {
     .ifrm{
         width: 550px;
     }
     
 }
-@media (max-width:650px) {
+@media (max-width:550px) {
     .ifrm{
-        width: 350px;
-    }
-    
-}
-@media (max-width:500px) {
-    .ifrm{
-        width: 400px;
+        width: 420px;
     }
     
 }
