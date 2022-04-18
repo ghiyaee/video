@@ -15,8 +15,8 @@ const VideoDetail = ({ video }) => {
         <div className="ifrm">
           <iframe src={videoSrc} className="ifrm" />
         </div>
-        <h4 className="titel">{video.snippet.title}</h4>
-        <p>{video.snippet.description}</p>
+        <h3 className="titel">{video.snippet.title}</h3>
+        <h4>{video.snippet.description}</h4>
         <div className="icon">
                 <i className="thumbs up outline icon large " onClick={upHandel}>&nbsp;&nbsp;{up}</i>
                 <i className="thumbs down outline icon large " onClick={downHandel}>&nbsp;&nbsp;{down}</i>
