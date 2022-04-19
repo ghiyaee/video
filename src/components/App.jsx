@@ -5,19 +5,16 @@ import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 import './App.css'
 class App extends React.Component{
-
   state = { videos: [], selectedVideo: null }
-  
   componentDidMount() {
     this.onSubmitValue('hello')
   }
-  onSubmitValue = async (term) => {   
+  onSubmitValue = async (word) => {   
     const respons = await YouTube.get('/search', {
       params:
-        { q: term }
+        { q: word }
     })
-
-    this.setState({ videos: respons.data.items ,selectedVideo:respons.data.items[0]})
+    this.setState({ videos: respons.data.items, selectedVideo: respons.data.items[0] })
   }
   onVideoSelect = (video) => {
     this.setState({selectedVideo:video});

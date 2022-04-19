@@ -1,14 +1,13 @@
 import React from "react";
 import './SearchBar.css'
 class SearchBar extends React.Component{
-    state = { term: ''  }
-    
+    state = { word: ''  } 
     onSubmatHandel = (e) => {
         e.preventDefault()
-        this.props.onSubmit(this.state.term)
+        this.props.onSubmit(this.state.word)
     }
     onChangeHandel = (e) => {
-        this.setState({ term: e.target.value })
+        this.setState({ word: e.target.value })
     }
     render() {
         return (
@@ -22,7 +21,7 @@ class SearchBar extends React.Component{
                   placeholder="Search"
                   className="input"
                   onChange={this.onChangeHandel}
-                  value={this.state.term}
+                  value={this.state.word}
                 />
               </div>
             </form>
