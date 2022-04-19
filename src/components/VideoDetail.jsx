@@ -7,7 +7,7 @@ const VideoDetail = ({ video }) => {
     const upHandel  =() =>{ setUp(up + 1 ) }
     const downHandel = () => { setDown(down + 1) }
     if (!video) {
-        return <div><i class="spinner loading icon"></i></div>
+        return <div><i className="spinner loading icon"></i></div>
     }
     const videoSrc=`https://www.youtube.com/embed/${video.id.videoId}`
     return (

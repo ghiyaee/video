@@ -14,7 +14,7 @@ class SearchBar extends React.Component{
         return (
           <div className="search-bar">
             <form action="" className="frm" onSubmit={this.onSubmatHandel}>
-              <i class="youtube icon massive red"></i>
+              <i className="youtube icon massive red"></i>
               <div className="field">
                 <label className="lbl">Video Search With Api YouTube</label>
                 <input
